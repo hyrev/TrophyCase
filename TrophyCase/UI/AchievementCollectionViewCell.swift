@@ -10,5 +10,7 @@ import UIKit
 
 class AchievementCollectionViewCell: UICollectionViewCell
 {
-    
+    @IBOutlet weak var icon: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var valueTabel: UILabel!
 }

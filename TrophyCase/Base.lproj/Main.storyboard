@@ -5,21 +5,35 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main-->
+        <!--Account-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="AccountViewController" customModule="TrophyCase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E35-OV-Sjn">
+                                <rect key="frame" x="140" y="433" width="134" height="30"/>
+                                <state key="normal" title="View Achievements"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="E35-OV-Sjn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m2g-q0-XFM"/>
+                            <constraint firstItem="E35-OV-Sjn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yu4-td-EMt"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Main" id="3d7-zd-buc"/>
+                    <navigationItem key="navigationItem" title="Account" id="3d7-zd-buc">
+                        <barButtonItem key="backBarButtonItem" title=" " id="deT-70-M77"/>
+                    </navigationItem>
                     <connections>
+                        <outlet property="viewAchievementsButton" destination="E35-OV-Sjn" id="uPR-6n-47O"/>
                         <segue destination="R98-X6-Id1" kind="show" identifier="show_achievements" id="ROd-Ih-hwx"/>
                     </connections>
                 </viewController>
@@ -30,18 +44,90 @@
         <!--Achievements-->
         <scene sceneID="gol-hL-IUL">
             <objects>
-                <viewController id="R98-X6-Id1" sceneMemberID="viewController">
+                <viewController id="R98-X6-Id1" customClass="AchievementsViewController" customModule="TrophyCase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JB8-Dx-OaL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wYR-jO-O9m">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="K8O-Ur-QrN">
+                                    <size key="itemSize" width="211" height="192"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="achievement_cell" id="Hgy-qj-Khs" customClass="AchievementCollectionViewCell" customModule="TrophyCase" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="230"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="lbX-yg-KRB">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="230"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ez7-P8-dee">
+                                                    <rect key="frame" x="36" y="31" width="128" height="128"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="128" id="9Bc-nN-T5b"/>
+                                                        <constraint firstAttribute="width" constant="128" id="fDh-NQ-oVd"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3S-sd-LLh">
+                                                    <rect key="frame" x="8" y="167" width="184" height="21"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6tv-IE-mZi">
+                                                    <rect key="frame" x="8" y="192" width="184" height="18"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Q3S-sd-LLh" firstAttribute="leading" secondItem="lbX-yg-KRB" secondAttribute="leading" constant="8" id="449-Rc-ONR"/>
+                                                <constraint firstItem="Ez7-P8-dee" firstAttribute="centerX" secondItem="lbX-yg-KRB" secondAttribute="centerX" id="5Qp-My-pcY"/>
+                                                <constraint firstItem="6tv-IE-mZi" firstAttribute="leading" secondItem="lbX-yg-KRB" secondAttribute="leading" constant="8" id="967-Ib-EnF"/>
+                                                <constraint firstItem="Ez7-P8-dee" firstAttribute="centerY" secondItem="lbX-yg-KRB" secondAttribute="centerY" constant="-20" id="Tzt-3c-Dk2"/>
+                                                <constraint firstItem="Q3S-sd-LLh" firstAttribute="top" secondItem="Ez7-P8-dee" secondAttribute="bottom" constant="8" id="WYK-Fr-pbd"/>
+                                                <constraint firstAttribute="trailing" secondItem="Q3S-sd-LLh" secondAttribute="trailing" constant="8" id="YuU-dh-4q4"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="6tv-IE-mZi" secondAttribute="bottom" constant="8" id="aDD-Ym-0CR"/>
+                                                <constraint firstItem="6tv-IE-mZi" firstAttribute="top" secondItem="Q3S-sd-LLh" secondAttribute="bottom" constant="4" id="aNc-VI-XPO"/>
+                                                <constraint firstAttribute="trailing" secondItem="6tv-IE-mZi" secondAttribute="trailing" constant="8" id="uSE-Gf-hFp"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="200" height="230"/>
+                                        <connections>
+                                            <outlet property="icon" destination="Ez7-P8-dee" id="K0I-8z-hx5"/>
+                                            <outlet property="titleLabel" destination="Q3S-sd-LLh" id="2Nt-zL-GOG"/>
+                                            <outlet property="valueTabel" destination="6tv-IE-mZi" id="wNL-Vm-0T2"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="wYR-jO-O9m" firstAttribute="leading" secondItem="JB8-Dx-OaL" secondAttribute="leading" id="1p6-3Y-zoX"/>
+                            <constraint firstAttribute="trailing" secondItem="wYR-jO-O9m" secondAttribute="trailing" id="WPA-0C-tZy"/>
+                            <constraint firstAttribute="bottom" secondItem="wYR-jO-O9m" secondAttribute="bottom" id="imZ-h3-y1u"/>
+                            <constraint firstItem="wYR-jO-O9m" firstAttribute="top" secondItem="JB8-Dx-OaL" secondAttribute="top" id="qLG-ec-RoO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="8JQ-Eh-eRo"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Achievements" id="Jlm-9V-xA1"/>
+                    <navigationItem key="navigationItem" title="Achievements" id="Jlm-9V-xA1">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="K4Q-lL-mUB"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="actionButton" destination="K4Q-lL-mUB" id="nQO-vx-fq5"/>
+                        <outlet property="collectionView" destination="wYR-jO-O9m" id="mBf-iB-qc8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OhR-a3-DBo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2054" y="119"/>
+            <point key="canvasLocation" x="2053.6231884057975" y="118.52678571428571"/>
         </scene>
         <!--Main Navigation Controller-->
         <scene sceneID="3Sz-mL-1N4">
@@ -72,7 +158,7 @@
     </scenes>
     <resources>
         <namedColor name="navigationPrimaryColor">
-            <color red="0.39536604289999999" green="0.77692830560000004" blue="0.83511060479999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.39500001072883606" green="0.77700001001358032" blue="0.83499997854232788" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="navigationSecondaryColor">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

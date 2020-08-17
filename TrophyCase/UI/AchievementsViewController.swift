@@ -10,6 +10,10 @@ import UIKit
 
 class AchievementsViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate
 {
+    @IBOutlet weak var actionButton: UIBarButtonItem!
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    //internal
     let achievementsManager = AchievementsManager.init()
     
     func collectionView(_ collectionView: UICollectionView,

@@ -20,6 +20,7 @@
 		23D3527A24EA2CC200F4EA56 /* AchievementCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D3527924EA2CC200F4EA56 /* AchievementCollectionViewCell.swift */; };
 		23D3527D24EA2CFC00F4EA56 /* AchievementsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D3527C24EA2CFC00F4EA56 /* AchievementsManager.swift */; };
 		23D3527F24EA2D0500F4EA56 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D3527E24EA2D0500F4EA56 /* Achievement.swift */; };
+		23EDA8F924EB2E9D005B6829 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EDA8F824EB2E9D005B6829 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		23D3527924EA2CC200F4EA56 /* AchievementCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementCollectionViewCell.swift; sourceTree = "<group>"; };
 		23D3527C24EA2CFC00F4EA56 /* AchievementsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsManager.swift; sourceTree = "<group>"; };
 		23D3527E24EA2D0500F4EA56 /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
+		23EDA8F824EB2E9D005B6829 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 			children = (
 				23D3527C24EA2CFC00F4EA56 /* AchievementsManager.swift */,
 				23D3527E24EA2D0500F4EA56 /* Achievement.swift */,
+				23EDA8F824EB2E9D005B6829 /* Constants.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				23D3527F24EA2D0500F4EA56 /* Achievement.swift in Sources */,
 				23D3527A24EA2CC200F4EA56 /* AchievementCollectionViewCell.swift in Sources */,
 				23D3527824EA2C7F00F4EA56 /* AchievementsViewController.swift in Sources */,
+				23EDA8F924EB2E9D005B6829 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
