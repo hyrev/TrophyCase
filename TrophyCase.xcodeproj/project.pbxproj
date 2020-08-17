@@ -9,25 +9,35 @@
 /* Begin PBXBuildFile section */
 		23D3525B24EA25DB00F4EA56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D3525A24EA25DB00F4EA56 /* AppDelegate.swift */; };
 		23D3525D24EA25DB00F4EA56 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D3525C24EA25DB00F4EA56 /* SceneDelegate.swift */; };
-		23D3525F24EA25DB00F4EA56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D3525E24EA25DB00F4EA56 /* ViewController.swift */; };
+		23D3525F24EA25DB00F4EA56 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D3525E24EA25DB00F4EA56 /* MainNavigationController.swift */; };
 		23D3526224EA25DB00F4EA56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23D3526024EA25DB00F4EA56 /* Main.storyboard */; };
 		23D3526424EA25E000F4EA56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23D3526324EA25E000F4EA56 /* Assets.xcassets */; };
 		23D3526724EA25E000F4EA56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23D3526524EA25E000F4EA56 /* LaunchScreen.storyboard */; };
 		23D3527024EA262E00F4EA56 /* achievements.json in Resources */ = {isa = PBXBuildFile; fileRef = 23D3526F24EA262E00F4EA56 /* achievements.json */; };
 		23D3527224EA298C00F4EA56 /* Colours.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23D3527124EA298C00F4EA56 /* Colours.xcassets */; };
+		23D3527624EA2C6300F4EA56 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D3527524EA2C6300F4EA56 /* AccountViewController.swift */; };
+		23D3527824EA2C7F00F4EA56 /* AchievementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D3527724EA2C7F00F4EA56 /* AchievementsViewController.swift */; };
+		23D3527A24EA2CC200F4EA56 /* AchievementCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D3527924EA2CC200F4EA56 /* AchievementCollectionViewCell.swift */; };
+		23D3527D24EA2CFC00F4EA56 /* AchievementsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D3527C24EA2CFC00F4EA56 /* AchievementsManager.swift */; };
+		23D3527F24EA2D0500F4EA56 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D3527E24EA2D0500F4EA56 /* Achievement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		23D3525724EA25DB00F4EA56 /* TrophyCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrophyCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23D3525A24EA25DB00F4EA56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23D3525C24EA25DB00F4EA56 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		23D3525E24EA25DB00F4EA56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		23D3525E24EA25DB00F4EA56 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		23D3526124EA25DB00F4EA56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		23D3526324EA25E000F4EA56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23D3526624EA25E000F4EA56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23D3526824EA25E000F4EA56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23D3526F24EA262E00F4EA56 /* achievements.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = achievements.json; sourceTree = "<group>"; };
 		23D3527124EA298C00F4EA56 /* Colours.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colours.xcassets; sourceTree = "<group>"; };
+		23D3527524EA2C6300F4EA56 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		23D3527724EA2C7F00F4EA56 /* AchievementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsViewController.swift; sourceTree = "<group>"; };
+		23D3527924EA2CC200F4EA56 /* AchievementCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementCollectionViewCell.swift; sourceTree = "<group>"; };
+		23D3527C24EA2CFC00F4EA56 /* AchievementsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsManager.swift; sourceTree = "<group>"; };
+		23D3527E24EA2D0500F4EA56 /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +70,11 @@
 		23D3525924EA25DB00F4EA56 /* TrophyCase */ = {
 			isa = PBXGroup;
 			children = (
+				23D3527B24EA2CE800F4EA56 /* Core */,
+				23D3527424EA2B0900F4EA56 /* UI */,
 				23D3526E24EA261D00F4EA56 /* Resources */,
 				23D3525A24EA25DB00F4EA56 /* AppDelegate.swift */,
 				23D3525C24EA25DB00F4EA56 /* SceneDelegate.swift */,
-				23D3525E24EA25DB00F4EA56 /* ViewController.swift */,
 				23D3526024EA25DB00F4EA56 /* Main.storyboard */,
 				23D3526324EA25E000F4EA56 /* Assets.xcassets */,
 				23D3526524EA25E000F4EA56 /* LaunchScreen.storyboard */,
@@ -79,6 +90,26 @@
 				23D3526F24EA262E00F4EA56 /* achievements.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		23D3527424EA2B0900F4EA56 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				23D3525E24EA25DB00F4EA56 /* MainNavigationController.swift */,
+				23D3527524EA2C6300F4EA56 /* AccountViewController.swift */,
+				23D3527724EA2C7F00F4EA56 /* AchievementsViewController.swift */,
+				23D3527924EA2CC200F4EA56 /* AchievementCollectionViewCell.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		23D3527B24EA2CE800F4EA56 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				23D3527C24EA2CFC00F4EA56 /* AchievementsManager.swift */,
+				23D3527E24EA2D0500F4EA56 /* Achievement.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,9 +185,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23D3525F24EA25DB00F4EA56 /* ViewController.swift in Sources */,
+				23D3525F24EA25DB00F4EA56 /* MainNavigationController.swift in Sources */,
 				23D3525B24EA25DB00F4EA56 /* AppDelegate.swift in Sources */,
+				23D3527D24EA2CFC00F4EA56 /* AchievementsManager.swift in Sources */,
+				23D3527624EA2C6300F4EA56 /* AccountViewController.swift in Sources */,
 				23D3525D24EA25DB00F4EA56 /* SceneDelegate.swift in Sources */,
+				23D3527F24EA2D0500F4EA56 /* Achievement.swift in Sources */,
+				23D3527A24EA2CC200F4EA56 /* AchievementCollectionViewCell.swift in Sources */,
+				23D3527824EA2C7F00F4EA56 /* AchievementsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
