@@ -8,6 +8,12 @@
 
 import Foundation
 
+struct SectionKeys
+{
+    static let header_en = "section_header_en"
+    static let achievements = "section_achievements"
+}
+
 struct AchievementKeys
 {
     static let id = "achievement_id"
