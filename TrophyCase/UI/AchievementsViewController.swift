@@ -54,7 +54,7 @@ class AchievementsViewController: UIViewController,
         {
             if let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: AchievementsSectionHeaderView.reuseID, for: indexPath) as? AchievementsSectionHeaderView
             {
-                headerView.headerLabel.text = achievementsManager.sections[indexPath.section].getLocalizedTitle()
+                headerView.setupWithSection(achievementsManager.sections[indexPath.section])
                 return headerView
             }
         }

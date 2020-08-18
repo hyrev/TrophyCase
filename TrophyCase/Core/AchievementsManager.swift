@@ -19,6 +19,20 @@ struct AchievementsSection
     {
         return sectionTitle_en
     }
+    
+    func getNumberAchieved() -> Int
+    {
+        var achieved = 0
+        for achievement in achievements
+        {
+            if achievement.isAchieved
+            {
+                achieved += 1
+            }
+        }
+        
+        return achieved
+    }
 }
 
 class AchievementsManager

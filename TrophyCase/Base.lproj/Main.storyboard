@@ -121,20 +121,30 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQh-lK-UQJ">
-                                            <rect key="frame" x="16" y="8" width="382" height="20"/>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                            <rect key="frame" x="16" y="8" width="43.5" height="20"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHN-HA-dKQ">
+                                            <rect key="frame" x="356" y="8" width="42" height="20"/>
+                                            <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                     <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="jHN-HA-dKQ" secondAttribute="trailing" constant="16" id="EaE-sR-BnG"/>
+                                        <constraint firstItem="jHN-HA-dKQ" firstAttribute="top" secondItem="cCp-9f-GzN" secondAttribute="top" constant="8" id="Jd3-Mt-hgj"/>
                                         <constraint firstAttribute="bottom" secondItem="QQh-lK-UQJ" secondAttribute="bottom" constant="8" id="b8H-du-3rC"/>
+                                        <constraint firstAttribute="bottom" secondItem="jHN-HA-dKQ" secondAttribute="bottom" constant="8" id="fFN-aJ-Kxl"/>
                                         <constraint firstItem="QQh-lK-UQJ" firstAttribute="leading" secondItem="cCp-9f-GzN" secondAttribute="leading" constant="16" id="ngp-Sp-MfQ"/>
-                                        <constraint firstAttribute="trailing" secondItem="QQh-lK-UQJ" secondAttribute="trailing" constant="16" id="sWr-s8-N21"/>
                                         <constraint firstItem="QQh-lK-UQJ" firstAttribute="top" secondItem="cCp-9f-GzN" secondAttribute="top" constant="8" id="uFL-sM-Wcs"/>
+                                        <constraint firstItem="jHN-HA-dKQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="QQh-lK-UQJ" secondAttribute="trailing" constant="8" id="xgX-eb-Tnv"/>
                                     </constraints>
                                     <connections>
+                                        <outlet property="countLabel" destination="jHN-HA-dKQ" id="W63-PB-vgv"/>
                                         <outlet property="headerLabel" destination="QQh-lK-UQJ" id="pl0-I4-XI1"/>
                                     </connections>
                                 </collectionReusableView>
