@@ -27,6 +27,7 @@ class AchievementsManager
     
     init()
     {
+        //read the achievements from embedded json
         let localContentURL = Bundle.main.url(forResource: "achievements", withExtension: "json")
         sections = AchievementsManager.parseJSON(from: localContentURL) ?? []
     }

@@ -33,6 +33,7 @@ class AchievementsViewController: UIViewController,
     
     @objc func showOptions()
     {
+        //show a placeholder alert for now, this functionality isn't complete yet
         let controller = UIAlertController.init(title: NSLocalizedString("options.coming-soon.title", comment: ""),
                                                 message: NSLocalizedString("options.coming-soon.body", comment: ""),
                                                 preferredStyle: .alert)
@@ -45,7 +46,9 @@ class AchievementsViewController: UIViewController,
     
     // MARK: UICollectionViewDataSource methods
     
-    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView
+    func collectionView(_ collectionView: UICollectionView,
+                        viewForSupplementaryElementOfKind kind: String,
+                        at indexPath: IndexPath) -> UICollectionReusableView
     {
         if kind == UICollectionView.elementKindSectionHeader
         {
@@ -85,6 +88,7 @@ class AchievementsViewController: UIViewController,
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
     {
+        //make the cells square and half the width of the collectionview
         let width = collectionView.frame.size.width
         return CGSize(width: width / 2.0, height: width / 2.0)
     }
