@@ -14,11 +14,27 @@ class AchievementCollectionViewCell: UICollectionViewCell
     
     @IBOutlet weak var icon: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var valueTabel: UILabel!
+    @IBOutlet weak var valueLabel: UILabel!
     
     func setupWithAchievement(_ achievement:Achievement)
     {
-        self.titleLabel.text = achievement.title_en
-        self.valueTabel.text = achievement.currentValue
+        icon.image = achievement.getIconImage()
+        titleLabel.text = achievement.title_en
+        valueLabel.text = achievement.currentValue
+        
+        setIsAchieved(achievement.isAchieved)
+    }
+    
+    fileprivate func setIsAchieved(_ isAchieved: Bool)
+    {
+        //normally we would want to dim the icon as well, but the icon I currently
+        //have has the alpha baked in, so skip for now
+        //icon.alpha = (isAchieved ? 1.0 : 0.5)
+        titleLabel.alpha = (isAchieved ? 1.0 : 0.5)
+        valueLabel.alpha = (isAchieved ? 1.0 : 0.5)
+        if !isAchieved
+        {
+            valueLabel.text = NSLocalizedString("achievement.locked", comment: "")
+        }
     }
 }

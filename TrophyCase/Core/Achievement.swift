@@ -6,7 +6,7 @@
 //  Copyright © 2020 Jake. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class Achievement
 {
@@ -34,5 +34,10 @@ class Achievement
         self.currentValue = currentValue
         self.isAchieved = isAchieved
         self.imageID = imageID
+    }
+    
+    func getIconImage() -> UIImage?
+    {
+        return UIImage.init(named: imageID)
     }
 }
