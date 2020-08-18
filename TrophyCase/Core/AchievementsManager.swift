@@ -10,8 +10,15 @@ import Foundation
 
 struct AchievementsSection
 {
+    //normally we'd parse out titles for all supported languages and use them based on device locale,
+    //but we'll stick to just english for now
     var sectionTitle_en: String
     var achievements: [Achievement]
+    
+    func getLocalizedTitle() -> String
+    {
+        return sectionTitle_en
+    }
 }
 
 class AchievementsManager

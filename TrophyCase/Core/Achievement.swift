@@ -11,7 +11,7 @@ import UIKit
 class Achievement
 {
     let id: String
-    let title_en: String
+    let title_en: String     //This would ideally be one of multiple different language titles
     let currentValue: String
     let isAchieved: Bool
     let imageID: String
@@ -39,5 +39,10 @@ class Achievement
     func getIconImage() -> UIImage?
     {
         return UIImage.init(named: imageID)
+    }
+    
+    func getLocalizedTitle() -> String
+    {
+        return title_en
     }
 }

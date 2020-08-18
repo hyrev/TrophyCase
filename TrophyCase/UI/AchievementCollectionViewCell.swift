@@ -19,7 +19,7 @@ class AchievementCollectionViewCell: UICollectionViewCell
     func setupWithAchievement(_ achievement:Achievement)
     {
         icon.image = achievement.getIconImage()
-        titleLabel.text = achievement.title_en
+        titleLabel.text = achievement.getLocalizedTitle()
         valueLabel.text = achievement.currentValue
         
         setIsAchieved(achievement.isAchieved)
