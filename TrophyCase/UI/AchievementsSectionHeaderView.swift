@@ -10,5 +10,7 @@ import UIKit
 
 class AchievementsSectionHeaderView: UICollectionReusableView
 {
+    static let reuseID = "achievement_header"
+    
     @IBOutlet weak var headerLabel: UILabel!
 }

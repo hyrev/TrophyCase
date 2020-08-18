@@ -7,3 +7,8 @@
 */
 
 "achievement.locked" = "Not Yet";
+
+"common.ok" = "OK";
+
+"options.coming-soon.title" = "Coming Soon";
+"options.coming-soon.body" = "This functionality will be added at a later date.";

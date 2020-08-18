@@ -22,8 +22,25 @@ class AchievementsViewController: UIViewController,
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        actionButton.target = self
+        actionButton.action = #selector(showOptions)
+        
         collectionView.dataSource = self
         collectionView.delegate = self
+    }
+    
+    // MARK: Button Listener methods
+    
+    @objc func showOptions()
+    {
+        let controller = UIAlertController.init(title: NSLocalizedString("options.coming-soon.title", comment: ""),
+                                                message: NSLocalizedString("options.coming-soon.body", comment: ""),
+                                                preferredStyle: .alert)
+        controller.addAction(UIAlertAction.init(title: NSLocalizedString("common.ok", comment: ""),
+                                                style: .default,
+                                                handler: nil))
+        
+        present(controller, animated: true, completion: nil)
     }
     
     // MARK: UICollectionViewDataSource methods
@@ -32,7 +49,7 @@ class AchievementsViewController: UIViewController,
     {
         if kind == UICollectionView.elementKindSectionHeader
         {
-            if let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "achievement_header", for: indexPath) as? AchievementsSectionHeaderView
+            if let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: AchievementsSectionHeaderView.reuseID, for: indexPath) as? AchievementsSectionHeaderView
             {
             
                 headerView.headerLabel.text = achievementsManager.achievementSections[indexPath.section].sectionTitle_en

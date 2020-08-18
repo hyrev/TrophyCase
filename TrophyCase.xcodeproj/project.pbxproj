@@ -117,18 +117,7 @@
 		23D3526E24EA261D00F4EA56 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				23EDA8FC24EB581E005B6829 /* achievement_record_01.png */,
-				23EDA90324EB581F005B6829 /* achievement_record_02.png */,
-				23EDA8FE24EB581E005B6829 /* achievement_record_03.png */,
-				23EDA90124EB581F005B6829 /* achievement_record_04.png */,
-				23EDA8FD24EB581E005B6829 /* achievement_record_05.png */,
-				23EDA8FF24EB581E005B6829 /* achievement_record_06.png */,
-				23EDA90724EB581F005B6829 /* achievement_virtualrace_01.png */,
-				23EDA90224EB581F005B6829 /* achievement_virtualrace_02.png */,
-				23EDA90024EB581F005B6829 /* achievement_virtualrace_03.png */,
-				23EDA90624EB581F005B6829 /* achievement_virtualrace_04.png */,
-				23EDA90424EB581F005B6829 /* achievement_virtualrace_05.png */,
-				23EDA90524EB581F005B6829 /* achievement_virtualrace_06.png */,
+				23EDA91624EB5D63005B6829 /* Achievement Icons */,
 				23D3526F24EA262E00F4EA56 /* achievements.json */,
 				23EDA91424EB5A49005B6829 /* Localizable.strings */,
 			);
@@ -155,6 +144,25 @@
 				23EDA8F824EB2E9D005B6829 /* Constants.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		23EDA91624EB5D63005B6829 /* Achievement Icons */ = {
+			isa = PBXGroup;
+			children = (
+				23EDA8FC24EB581E005B6829 /* achievement_record_01.png */,
+				23EDA90324EB581F005B6829 /* achievement_record_02.png */,
+				23EDA8FE24EB581E005B6829 /* achievement_record_03.png */,
+				23EDA90124EB581F005B6829 /* achievement_record_04.png */,
+				23EDA8FD24EB581E005B6829 /* achievement_record_05.png */,
+				23EDA8FF24EB581E005B6829 /* achievement_record_06.png */,
+				23EDA90724EB581F005B6829 /* achievement_virtualrace_01.png */,
+				23EDA90224EB581F005B6829 /* achievement_virtualrace_02.png */,
+				23EDA90024EB581F005B6829 /* achievement_virtualrace_03.png */,
+				23EDA90624EB581F005B6829 /* achievement_virtualrace_04.png */,
+				23EDA90424EB581F005B6829 /* achievement_virtualrace_05.png */,
+				23EDA90524EB581F005B6829 /* achievement_virtualrace_06.png */,
+			);
+			path = "Achievement Icons";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
