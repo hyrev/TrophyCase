@@ -51,25 +51,23 @@ class AchievementsViewController: UIViewController,
         {
             if let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: AchievementsSectionHeaderView.reuseID, for: indexPath) as? AchievementsSectionHeaderView
             {
-            
-                headerView.headerLabel.text = achievementsManager.achievementSections[indexPath.section].sectionTitle_en
-            
+                headerView.headerLabel.text = achievementsManager.sections[indexPath.section].sectionTitle_en
                 return headerView
             }
         }
         
-        return UIView.init(frame: .zero) as! UICollectionReusableView
+        return UICollectionReusableView.init(frame: .zero)
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int
     {
-        return achievementsManager.achievementSections.count
+        return achievementsManager.sections.count
     }
     
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int
     {
-        return achievementsManager.achievementSections[section].sectionAchievements.count
+        return achievementsManager.sections[section].achievements.count
     }
     
     func collectionView(_ collectionView: UICollectionView,
@@ -77,7 +75,7 @@ class AchievementsViewController: UIViewController,
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AchievementCollectionViewCell.reuseID,
                                                       for: indexPath) as! AchievementCollectionViewCell
         
-        let currentAchievement = achievementsManager.achievementSections[indexPath.section].sectionAchievements[indexPath.row]
+        let currentAchievement = achievementsManager.sections[indexPath.section].achievements[indexPath.row]
         cell.setupWithAchievement(currentAchievement)
         
         return cell;

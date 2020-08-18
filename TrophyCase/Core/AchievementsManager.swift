@@ -11,21 +11,27 @@ import Foundation
 struct AchievementsSection
 {
     var sectionTitle_en: String
-    var sectionAchievements: [Achievement]
+    var achievements: [Achievement]
 }
 
 class AchievementsManager
 {
-    var achievementSections: [AchievementsSection]
+    var sections: [AchievementsSection]
     
     init()
     {
         let localContentURL = Bundle.main.url(forResource: "achievements", withExtension: "json")
-        achievementSections = AchievementsManager.parseJSON(from: localContentURL) ?? []
+        sections = AchievementsManager.parseJSON(from: localContentURL) ?? []
     }
-    
+   
+    /**
+     Attempts to parse achievement data from JSON at the specified URL
+     - Parameter jsonURL: the location of the JSON data to parse, currently only being used with URL for bundled content
+     - Returns: An array of achievement sections in any were parsed successfully, nil otherwise
+     */
     fileprivate static func parseJSON(from jsonURL: URL?) -> [AchievementsSection]?
     {
+        //If the URL is nil don't bother continuing
         guard let jsonURL = jsonURL else
         {
             return nil
@@ -33,18 +39,22 @@ class AchievementsManager
         
         do
         {
+            //attempt to read/load the json data
             let achievementData = try Data.init(contentsOf: jsonURL)
             let achievementJSON = try JSONSerialization.jsonObject(with: achievementData,
                                                                    options: .allowFragments) as! Dictionary<String, Any>
             
+            //grab the json object we want out of it
             if let sectionJSON = achievementJSON["achievements"] as? [Dictionary<String, Any>]
             {
+                //iterate over each of the sections and instantiate it
                 var tempSections: [AchievementsSection] = []
                 for sectionObj in sectionJSON
                 {
                     if let sectionTitle = sectionObj[SectionKeys.header_en] as? String,
                        let sectionAchievements = sectionObj[SectionKeys.achievements] as? [Dictionary<String, Any>]
                     {
+                        //iterate over each achievement in the section and instantiate it
                         var tempAchievements: [Achievement] = []
                         for achievementObj in sectionAchievements
                         {
@@ -55,7 +65,7 @@ class AchievementsManager
                         }
                         
                         let section = AchievementsSection.init(sectionTitle_en: sectionTitle,
-                                                               sectionAchievements: tempAchievements)
+                                                               achievements: tempAchievements)
                         tempSections.append(section)
                     }
                 }

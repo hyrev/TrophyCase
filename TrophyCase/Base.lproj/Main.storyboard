@@ -21,10 +21,20 @@
                                 <rect key="frame" x="140" y="433" width="134" height="30"/>
                                 <state key="normal" title="View Achievements"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yDc-fB-X7P">
+                                <rect key="frame" x="20" y="152" width="374" height="81.5"/>
+                                <string key="text">This screen is a placeholder and exists so that we can "drill in" to the achievements view as it has a navigation back button in the mockup. Hit "View Achievements" to continue.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="yDc-fB-X7P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6FG-mT-P9j"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yDc-fB-X7P" secondAttribute="trailing" constant="20" id="9Ig-XA-USR"/>
                             <constraint firstItem="E35-OV-Sjn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m2g-q0-XFM"/>
+                            <constraint firstItem="yDc-fB-X7P" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="or6-Ty-T8k"/>
                             <constraint firstItem="E35-OV-Sjn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yu4-td-EMt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -75,13 +85,13 @@
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3S-sd-LLh">
                                                     <rect key="frame" x="8" y="116" width="184" height="20.5"/>
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6tv-IE-mZi">
                                                     <rect key="frame" x="8" y="140.5" width="184" height="18"/>
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
