@@ -21,6 +21,20 @@
 		23D3527D24EA2CFC00F4EA56 /* AchievementsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D3527C24EA2CFC00F4EA56 /* AchievementsManager.swift */; };
 		23D3527F24EA2D0500F4EA56 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D3527E24EA2D0500F4EA56 /* Achievement.swift */; };
 		23EDA8F924EB2E9D005B6829 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EDA8F824EB2E9D005B6829 /* Constants.swift */; };
+		23EDA8FB24EB4043005B6829 /* AchievementsSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EDA8FA24EB4043005B6829 /* AchievementsSectionHeaderView.swift */; };
+		23EDA90824EB581F005B6829 /* achievement_record_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 23EDA8FC24EB581E005B6829 /* achievement_record_01.png */; };
+		23EDA90924EB581F005B6829 /* achievement_record_05.png in Resources */ = {isa = PBXBuildFile; fileRef = 23EDA8FD24EB581E005B6829 /* achievement_record_05.png */; };
+		23EDA90A24EB581F005B6829 /* achievement_record_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 23EDA8FE24EB581E005B6829 /* achievement_record_03.png */; };
+		23EDA90B24EB581F005B6829 /* achievement_record_06.png in Resources */ = {isa = PBXBuildFile; fileRef = 23EDA8FF24EB581E005B6829 /* achievement_record_06.png */; };
+		23EDA90C24EB581F005B6829 /* achievement_virtualrace_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 23EDA90024EB581F005B6829 /* achievement_virtualrace_03.png */; };
+		23EDA90D24EB581F005B6829 /* achievement_record_04.png in Resources */ = {isa = PBXBuildFile; fileRef = 23EDA90124EB581F005B6829 /* achievement_record_04.png */; };
+		23EDA90E24EB581F005B6829 /* achievement_virtualrace_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 23EDA90224EB581F005B6829 /* achievement_virtualrace_02.png */; };
+		23EDA90F24EB581F005B6829 /* achievement_record_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 23EDA90324EB581F005B6829 /* achievement_record_02.png */; };
+		23EDA91024EB581F005B6829 /* achievement_virtualrace_05.png in Resources */ = {isa = PBXBuildFile; fileRef = 23EDA90424EB581F005B6829 /* achievement_virtualrace_05.png */; };
+		23EDA91124EB581F005B6829 /* achievement_virtualrace_06.png in Resources */ = {isa = PBXBuildFile; fileRef = 23EDA90524EB581F005B6829 /* achievement_virtualrace_06.png */; };
+		23EDA91224EB581F005B6829 /* achievement_virtualrace_04.png in Resources */ = {isa = PBXBuildFile; fileRef = 23EDA90624EB581F005B6829 /* achievement_virtualrace_04.png */; };
+		23EDA91324EB581F005B6829 /* achievement_virtualrace_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 23EDA90724EB581F005B6829 /* achievement_virtualrace_01.png */; };
+		23EDA91524EB5A49005B6829 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 23EDA91424EB5A49005B6829 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +54,20 @@
 		23D3527C24EA2CFC00F4EA56 /* AchievementsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsManager.swift; sourceTree = "<group>"; };
 		23D3527E24EA2D0500F4EA56 /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
 		23EDA8F824EB2E9D005B6829 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		23EDA8FA24EB4043005B6829 /* AchievementsSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsSectionHeaderView.swift; sourceTree = "<group>"; };
+		23EDA8FC24EB581E005B6829 /* achievement_record_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = achievement_record_01.png; sourceTree = "<group>"; };
+		23EDA8FD24EB581E005B6829 /* achievement_record_05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = achievement_record_05.png; sourceTree = "<group>"; };
+		23EDA8FE24EB581E005B6829 /* achievement_record_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = achievement_record_03.png; sourceTree = "<group>"; };
+		23EDA8FF24EB581E005B6829 /* achievement_record_06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = achievement_record_06.png; sourceTree = "<group>"; };
+		23EDA90024EB581F005B6829 /* achievement_virtualrace_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = achievement_virtualrace_03.png; sourceTree = "<group>"; };
+		23EDA90124EB581F005B6829 /* achievement_record_04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = achievement_record_04.png; sourceTree = "<group>"; };
+		23EDA90224EB581F005B6829 /* achievement_virtualrace_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = achievement_virtualrace_02.png; sourceTree = "<group>"; };
+		23EDA90324EB581F005B6829 /* achievement_record_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = achievement_record_02.png; sourceTree = "<group>"; };
+		23EDA90424EB581F005B6829 /* achievement_virtualrace_05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = achievement_virtualrace_05.png; sourceTree = "<group>"; };
+		23EDA90524EB581F005B6829 /* achievement_virtualrace_06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = achievement_virtualrace_06.png; sourceTree = "<group>"; };
+		23EDA90624EB581F005B6829 /* achievement_virtualrace_04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = achievement_virtualrace_04.png; sourceTree = "<group>"; };
+		23EDA90724EB581F005B6829 /* achievement_virtualrace_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = achievement_virtualrace_01.png; sourceTree = "<group>"; };
+		23EDA91424EB5A49005B6829 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +117,9 @@
 		23D3526E24EA261D00F4EA56 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				23EDA91624EB5D63005B6829 /* Achievement Icons */,
 				23D3526F24EA262E00F4EA56 /* achievements.json */,
+				23EDA91424EB5A49005B6829 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -101,6 +131,7 @@
 				23D3527524EA2C6300F4EA56 /* AccountViewController.swift */,
 				23D3527724EA2C7F00F4EA56 /* AchievementsViewController.swift */,
 				23D3527924EA2CC200F4EA56 /* AchievementCollectionViewCell.swift */,
+				23EDA8FA24EB4043005B6829 /* AchievementsSectionHeaderView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -113,6 +144,25 @@
 				23EDA8F824EB2E9D005B6829 /* Constants.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		23EDA91624EB5D63005B6829 /* Achievement Icons */ = {
+			isa = PBXGroup;
+			children = (
+				23EDA8FC24EB581E005B6829 /* achievement_record_01.png */,
+				23EDA90324EB581F005B6829 /* achievement_record_02.png */,
+				23EDA8FE24EB581E005B6829 /* achievement_record_03.png */,
+				23EDA90124EB581F005B6829 /* achievement_record_04.png */,
+				23EDA8FD24EB581E005B6829 /* achievement_record_05.png */,
+				23EDA8FF24EB581E005B6829 /* achievement_record_06.png */,
+				23EDA90724EB581F005B6829 /* achievement_virtualrace_01.png */,
+				23EDA90224EB581F005B6829 /* achievement_virtualrace_02.png */,
+				23EDA90024EB581F005B6829 /* achievement_virtualrace_03.png */,
+				23EDA90624EB581F005B6829 /* achievement_virtualrace_04.png */,
+				23EDA90424EB581F005B6829 /* achievement_virtualrace_05.png */,
+				23EDA90524EB581F005B6829 /* achievement_virtualrace_06.png */,
+			);
+			path = "Achievement Icons";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,11 +223,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23EDA90E24EB581F005B6829 /* achievement_virtualrace_02.png in Resources */,
+				23EDA90924EB581F005B6829 /* achievement_record_05.png in Resources */,
 				23D3526724EA25E000F4EA56 /* LaunchScreen.storyboard in Resources */,
+				23EDA90D24EB581F005B6829 /* achievement_record_04.png in Resources */,
+				23EDA91124EB581F005B6829 /* achievement_virtualrace_06.png in Resources */,
 				23D3527224EA298C00F4EA56 /* Colours.xcassets in Resources */,
 				23D3527024EA262E00F4EA56 /* achievements.json in Resources */,
+				23EDA91324EB581F005B6829 /* achievement_virtualrace_01.png in Resources */,
+				23EDA90F24EB581F005B6829 /* achievement_record_02.png in Resources */,
 				23D3526424EA25E000F4EA56 /* Assets.xcassets in Resources */,
+				23EDA90A24EB581F005B6829 /* achievement_record_03.png in Resources */,
+				23EDA91024EB581F005B6829 /* achievement_virtualrace_05.png in Resources */,
 				23D3526224EA25DB00F4EA56 /* Main.storyboard in Resources */,
+				23EDA91524EB5A49005B6829 /* Localizable.strings in Resources */,
+				23EDA90824EB581F005B6829 /* achievement_record_01.png in Resources */,
+				23EDA90B24EB581F005B6829 /* achievement_record_06.png in Resources */,
+				23EDA91224EB581F005B6829 /* achievement_virtualrace_04.png in Resources */,
+				23EDA90C24EB581F005B6829 /* achievement_virtualrace_03.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23D3525F24EA25DB00F4EA56 /* MainNavigationController.swift in Sources */,
+				23EDA8FB24EB4043005B6829 /* AchievementsSectionHeaderView.swift in Sources */,
 				23D3525B24EA25DB00F4EA56 /* AppDelegate.swift in Sources */,
 				23D3527D24EA2CFC00F4EA56 /* AchievementsManager.swift in Sources */,
 				23D3527624EA2C6300F4EA56 /* AccountViewController.swift in Sources */,

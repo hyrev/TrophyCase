@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  TrophyCase
+
+  Created by Jake on 2020-08-17.
+  Copyright © 2020 Jake. All rights reserved.
+*/
+
+"achievement.locked" = "Not Yet";
+
+"common.ok" = "OK";
+
+"options.coming-soon.title" = "Coming Soon";
+"options.coming-soon.body" = "This functionality will be added at a later date.";
